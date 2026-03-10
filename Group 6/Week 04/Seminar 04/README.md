@@ -203,11 +203,11 @@ int main() {
     maria.print();
     petar.print();
 
-    if (ivan < maria)
+    if (ivan.getGrade() < maria.getGrade())
         std::cout << ivan.getName() << " има по-ниска оценка от "
                   << maria.getName() << "\n";
 
-    if (ivan == petar)
+    if (ivan.getName() == petar.getName())
         std::cout << ivan.getName() << " и " << petar.getName()
                   << " имат еднакви имена и оценки\n";
 
