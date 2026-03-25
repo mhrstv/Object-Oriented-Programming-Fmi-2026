@@ -41,7 +41,7 @@ public:
 
 	NVector operator++(int dummy);
 
-	NVector operator()(const std::function<int(int)>& func);
+	NVector operator()(const std::function<int(int)>& func) const;
 
 	friend ostream& operator<<(ostream& os, const NVector& v);
 	friend istream& operator>>(istream& is, NVector& v);
