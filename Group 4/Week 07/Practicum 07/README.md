@@ -11,6 +11,8 @@
   <summary>Message from Serho</summary>
     Mn dobra zadacha bro
 </details>
+
+
 ```c++
 std::ifstream is("inputImage.ppm", std::ios::binary);
 
