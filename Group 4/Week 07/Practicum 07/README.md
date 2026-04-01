@@ -65,6 +65,26 @@ out << "P5\n" << width << " " << height << "\n" << maxval << "\n"; // хедър
 
 ---
 
+## Задача Gallery
+
+Имплементирайте `class Gallery`, който представлява колекция от изображения и поддържа следните операции върху тях:
+
+```c++
+void add(Image* img) — добавя изображение, като удвоява капацитета при нужда
+void remove(size_t index) — премахва изображение по индекс
+void clear() - премахва всички изображения
+Image* operator[](size_t index) — достъп по индекс с проверка за граници
+size_t size() — брой изображения
+
+Gallery filter(ImageType type) — връща нова галерия съдържаща само изображения от даден тип (например само PPM или само PGM)
+void applyToAll(std::function<void(Image*)> op) — прилага операция върху всяко изображение в галерията
+Gallery operator+(const Gallery& other) — обединява две галерии в нова
+Image* findLargest() — връща изображението с най-много пиксели
+void saveAll(const std::string& directory) — записва всички изображения в дадена директория
+```
+
+---
+
 # Задача MyString (допълнение)
 
 ## Добавете следните функционалности към класа MyString от седмица 6:
